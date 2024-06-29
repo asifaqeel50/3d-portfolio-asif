@@ -46,7 +46,20 @@ import linkedin from "./socials/linkedin.svg";
 import twitter from "./socials/twitter.svg";
 import youtube from "./socials/youtube.svg";
 
+import softvilla from "./company/softvilla-white.png";
+import ngs from "./company/ngs.png";
+import icr from "./company/icr.png";
+
+import kfueitgpt from "./kfueitgpt.png";
+import retroviper from "./retroviper.jpg";
+
+
 export {
+  softvilla,
+  ngs,
+  icr,
+  kfueitgpt,
+  retroviper,
   backend,
   bulb,
   close,

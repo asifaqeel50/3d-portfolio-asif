@@ -7,6 +7,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
+import emailIcon from "../assets/socials/email.png";
+import linkedinIcon from "../assets/socials/linkedin.svg";
+import githubicon from "../assets/socials/github.svg";
 
 // Contact
 export const Contact = () => {
@@ -132,90 +135,35 @@ export const Contact = () => {
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-          {/* Form */}
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="mt-12 flex flex-col gap-8"
-          >
-            {/* Name */}
-            <label htmlFor="name" className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name*</span>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="John Doe"
-                title="What's your name?"
-                disabled={loading}
-                aria-disabled={loading}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60"
-              />
-
-              {/* Invalid Name */}
-              <span className="text-red-400 mt-2 hidden" id="name-error">
-                Invalid Name!
-              </span>
-            </label>
-
-            {/* Email */}
-            <label htmlFor="email" className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Email*</span>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="johndoe@email.com"
-                title="What's your email?"
-                disabled={loading}
-                aria-disabled={loading}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60"
-              />
-
-              {/* Invalid Email */}
-              <span className="text-red-400 mt-2 hidden" id="email-error">
-                Invalid E-mail!
-              </span>
-            </label>
-
-            {/* Message */}
-            <label htmlFor="message" className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message*</span>
-              <textarea
-                rows={7}
-                name="message"
-                id="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Hello there!"
-                title="What do you want to say?"
-                disabled={loading}
-                aria-disabled={loading}
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium disabled:bg-tertiary/20 disabled:text-white/60 disabled:resize-none"
-              />
-
-              {/* Invalid Message */}
-              <span className="text-red-400 mt-2 hidden" id="message-error">
-                Invalid Message!
-              </span>
-            </label>
-
-            {/* Submit */}
-            <button
-              type="submit"
-              title={loading ? "Sending..." : "Send"}
-              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl disabled:bg-tertiary/20 disabled:text-white/60"
-              disabled={loading}
-              aria-disabled={loading}
-            >
-              {/* check loader state */}
-              {loading ? "Sending..." : "Send"}
-            </button>
-          </form>
+          <div className="mt-12 flex flex-col gap-8">
+            <div className="flex items-center gap-4">
+              <img src={emailIcon} alt="Email" className="w-8 h-8" />
+              <a
+                href="mailto:asifaqeel50@gmail.com"
+                className="text-white font-medium"
+              >
+                asifaqeel50@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center gap-4">
+              <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
+              <a
+                href="https://www.linkedin.com/in/muhammad-asif-aqeel-70b788218/"
+                className="text-white font-medium"
+              >
+                Muhammad Asif Aqeel
+              </a>
+            </div>
+            <div className="flex items-center gap-4">
+              <img src={githubicon} alt="Github" className="w-8 h-8" />
+              <a
+                href="https://github.com/asifaqeel50"
+                className="text-white font-medium"
+              >
+                Muhammad Asif Aqeel
+              </a>
+            </div>
+          </div>
         </motion.div>
 
         {/* Earth Model */}
