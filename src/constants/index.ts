@@ -371,7 +371,7 @@ export const SOCIALS = [
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "www.linkedin.com/in/muhammad-asif-aqeel-70b788218",
+    link: "www.linkedin.com/in/",
   },
   // {
   //   name: "Twitter",

@@ -145,7 +145,7 @@ export const Contact = () => {
                 asifaqeel50@gmail.com
               </a>
             </div>
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
               <a
                 href="https://www.linkedin.com/in/muhammad-asif-aqeel-70b788218/"
@@ -153,7 +153,7 @@ export const Contact = () => {
               >
                 Muhammad Asif Aqeel
               </a>
-            </div>
+            </div> */}
             <div className="flex items-center gap-4">
               <img src={githubicon} alt="Github" className="w-8 h-8" />
               <a
